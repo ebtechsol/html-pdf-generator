@@ -1,0 +1,35 @@
+{
+  "name": "html-epdf-generator",
+  "version": "1.0.0",
+  "description": "npm package to generate static and dynamic PDF in node.js",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ebtechsol/html-pdf-generator.git"
+  },
+  "keywords": [
+    "pdf",
+    "epdf generator",
+    "template",
+    "nodejs pdf",
+    "html to pdf",
+    "pdf document",
+    "make pdf",
+    "create pdf",
+    "generate pdf",
+    "html2pdf"
+  ],
+  "author": "EB TECHNICAL SOLUTIONS Pvt Ltd <info@ebtechsol.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ebtechsol/html-pdf-generator/issues"
+  },
+  "homepage": "https://github.com/ebtechsol/html-pdf-generator#readme",
+  "dependencies": {
+    "handlebars": "^4.7.7",
+    "puppeteer": "^19.4.1"
+  }
+}
