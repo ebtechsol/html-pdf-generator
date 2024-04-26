@@ -24,7 +24,9 @@ async function generatePdf(htmlTemplatePath, data = {}, pdfFormatDetails = {}) {
     // you can check by logging it on console
     const template = hb.compile(res);
     const result = await template(data);
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({
+      headless: 'true'
+    });
     const page = await browser.newPage();
     await page.setContent(result);
     PDF = await page.pdf(pdfFormatDetails);
