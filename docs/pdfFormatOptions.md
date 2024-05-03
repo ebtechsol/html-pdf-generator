@@ -1,7 +1,7 @@
 ## PDF formating options
 
 ```js
-var PDF = pdfGenerator.generatePdf("template.hbs", data, options);
+var PDF = pdfGenerator.generatePDF("template.hbs", data, options);
 ```
 
 `options` <Object> Options object which might have the following properties:
@@ -35,7 +35,7 @@ var PDF = pdfGenerator.generatePdf("template.hbs", data, options);
 
 NOTE Generating a pdf is currently only supported in Chrome headless.
 
-NOTE By default, `pdfGenerator.generatePdf()` generates a pdf with modified colors for printing. Use the -webkit-print-color-adjust property to force rendering of exact colors.
+NOTE By default, `pdfGenerator.generatePDF()` generates a pdf with modified colors for printing. Use the -webkit-print-color-adjust property to force rendering of exact colors.
 
 The `width`, `height`, and `margin` options accept values labeled with units. Unlabeled values are treated as pixels.
 

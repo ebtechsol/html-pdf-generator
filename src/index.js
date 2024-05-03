@@ -17,7 +17,7 @@ async function getTemplateHtml(htmlTemplatePath) {
 }
 
 // Generating PDF
-async function generatePdf(htmlTemplatePath, data = {}, pdfFormatDetails = {}) {
+async function generatePDF(htmlTemplatePath, data = {}, pdfFormatDetails = {}) {
   let PDF;
   await getTemplateHtml(htmlTemplatePath).then(async (res) => {
     // Now we have the html code of our template in res object
@@ -35,4 +35,4 @@ async function generatePdf(htmlTemplatePath, data = {}, pdfFormatDetails = {}) {
   return PDF;
 }
 
-module.exports = { generatePdf };
+module.exports = { generatePDF };
