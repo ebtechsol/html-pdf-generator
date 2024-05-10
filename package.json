@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/ebtechsol/html-pdf-generator#readme",
   "dependencies": {
+    "@sparticuz/chromium": "^123.0.1",
     "handlebars": "^4.7.7",
     "puppeteer": "^19.4.1"
   }
