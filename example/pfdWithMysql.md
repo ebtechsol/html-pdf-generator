@@ -64,7 +64,7 @@ async function getData() {
 
 app.get("", async (req, res) => {
   getData().then(async (data) => {
-    let PDF = await pdfGenerator.generatePdf("template.hbs", data);
+    let PDF = await pdfGenerator.generatePDF("template.hbs", data);
     res.contentType("application/pdf");
     res.status(200).send(PDF);
   });

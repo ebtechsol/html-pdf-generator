@@ -30,16 +30,16 @@ const pdfGenerator = require("html-epdf-generators");
 const app = express();
 
 app.get("", async (req, res) => {
-  var PDF = await pdfGenerator.generatePdf("pdfHtmlFormat.hbs");
+  var PDF = await pdfGenerator.generatePDF("pdfHtmlFormat.hbs");
   res.contentType("application/pdf");
   res.status(200).send(PDF);
 });
 ```
 
-`generatePdf()` syntax and parameters
+`generatePDF()` syntax and parameters
 
 ```js
-generatePdf(
+generatePDF(
   templatePath, //<string>
   data, //<object>   Pass data to template(optional)
   options //<object>   PDF format options(optional)
@@ -96,7 +96,7 @@ app.get("", async (req, res) => {
     margin: { top: "80px", bottom: "100px" },
   };
 
-  let PDF = await pdfGenerator.generatePdf("template.hbs", students, options);
+  let PDF = await pdfGenerator.generatePDF("template.hbs", students, options);
   res.contentType("application/pdf");
   res.status(200).send(PDF);
 });
