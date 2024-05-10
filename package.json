@@ -1,6 +1,6 @@
 {
   "name": "html-epdf-generator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "npm package to generate static and dynamic PDF in node.js",
   "main": "src/index.js",
   "scripts": {
@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/ebtechsol/html-pdf-generator#readme",
   "dependencies": {
+    "@sparticuz/chromium": "^123.0.1",
     "handlebars": "^4.7.7",
     "puppeteer": "^19.4.1"
   }
