@@ -1,6 +1,6 @@
 {
   "name": "html-epdf-generator",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "npm package to generate static and dynamic PDF in node.js",
   "main": "src/index.js",
   "scripts": {
